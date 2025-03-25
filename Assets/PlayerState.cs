@@ -10,7 +10,10 @@ public class PlayerState
     protected Rigidbody2D rb;
 
     protected float xInput;
+    protected float yInput; 
     private string animBoolName;
+
+    protected float stateTimer;
 
     public PlayerState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName)
     {
@@ -27,7 +30,11 @@ public class PlayerState
 
     public virtual void Update()
     {
+        stateTimer -= Time.deltaTime;
+
         xInput = Input.GetAxisRaw("Horizontal"); //Lấy giá trị trục ngang ánh xạ như phím A và D
+        yInput = Input.GetAxisRaw("Vertical");
+        player.anim.SetFloat("yVelocity", rb.velocity.y);
 
     }
 
