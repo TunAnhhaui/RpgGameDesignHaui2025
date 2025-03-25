@@ -63,6 +63,9 @@
     <Compile Include="Assets\PlayerStateMachine.cs" />
     <Compile Include="Assets\PlayerIdleState.cs" />
     <Compile Include="Assets\PlayerMoveState.cs" />
+    <Compile Include="Assets\PlayerGroundedState.cs" />
+    <Compile Include="Assets\PlayerAirState.cs" />
+    <Compile Include="Assets\PlayerJumpState.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

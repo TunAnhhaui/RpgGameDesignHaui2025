@@ -28,6 +28,7 @@ public class PlayerState
     public virtual void Update()
     {
         xInput = Input.GetAxisRaw("Horizontal"); //Lấy giá trị trục ngang ánh xạ như phím A và D
+        player.anim.SetFloat("yVelocity", rb.velocity.y);
 
     }
 
