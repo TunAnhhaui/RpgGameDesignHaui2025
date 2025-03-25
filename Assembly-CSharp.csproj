@@ -66,6 +66,7 @@
     <Compile Include="Assets\PlayerGroundedState.cs" />
     <Compile Include="Assets\PlayerAirState.cs" />
     <Compile Include="Assets\PlayerJumpState.cs" />
+    <Compile Include="Assets\PlayerDashState.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
